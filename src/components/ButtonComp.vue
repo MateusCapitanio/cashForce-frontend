@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
   <div class="divButton">
-    <button>Olá, sou um button</button>
+    <button>Dados do cedente</button>
   </div>
 </template>
 
