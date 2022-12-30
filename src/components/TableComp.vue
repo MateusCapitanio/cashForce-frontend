@@ -1,11 +1,22 @@
 <script setup>
 import Button from "../components/ButtonComp.vue";
+import getRequest from "../api/baseRequest";
 </script>
 <script>
+const responseBuyers = await getRequest("buyers");
+const responseProviders = await getRequest("providers");
+
 export default {
   data() {
     return {
-      items_array: ["10", "2", "3", "4", "5", "6"],
+      items_array: [
+        1234,
+        responseBuyers.name,
+        responseProviders.name,
+        "12/02/2020",
+        "R$ 49.725,00",
+        "RECEBIDO",
+      ],
     };
   },
 };
@@ -28,24 +39,8 @@ export default {
       </thead>
       <tbody>
         <tr>
-          <td>001</td>
-          <td>Notebook i7 8GB Branco</td>
-          <td>Informática</td>
-          <td>Informática</td>
-          <td>Informática</td>
-          <td>Informática</td>
-          <td><Button /></td>
-        </tr>
-        <tr>
-          <td>002</td>
-          <td>Caneta Esferográfica Azul</td>
-          <td>Papelaria</td>
-          <td>Papelaria</td>
-          <td>Papelaria</td>
-          <td>Papelaria</td>
-        </tr>
-        <tr>
           <td v-for="items in items_array" :key="items[0]">{{ items }}</td>
+          <td><Button /></td>
         </tr>
       </tbody>
     </table>

@@ -1,10 +1,6 @@
 <script setup>
-// import Button from "./components/ButtonComp.vue";
-import getRequest from "./api/baseRequest";
 import Header from "./components/HeaderComp.vue";
 import Table from "./components/TableComp.vue";
-
-getRequest("");
 </script>
 
 <template>
