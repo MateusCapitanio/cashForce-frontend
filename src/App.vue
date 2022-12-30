@@ -2,6 +2,7 @@
 // import Button from "./components/ButtonComp.vue";
 import getRequest from "./api/baseRequest";
 import Header from "./components/HeaderComp.vue";
+import Table from "./components/TableComp.vue";
 
 getRequest("");
 </script>
@@ -10,12 +11,11 @@ getRequest("");
   <main>
     <aside>
       <img class="classImg" src="./assets/logo.jpeg" />
-      <div class="selectionDiv">
-        <p>Notas fiscais</p>
-      </div>
+      <button class="selectionDiv">Notas fiscais</button>
     </aside>
     <section class="divSection">
       <Header />
+      <Table />
     </section>
   </main>
 </template>
@@ -30,25 +30,26 @@ aside {
   width: 20%;
   height: 100vh;
   background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .classImg {
-  width: 250px;
+  width: 200px;
   margin: 10px;
 }
 
 .selectionDiv {
+  border: none;
+  background: none;
   border-left: 5px solid #00be8a;
-  margin: 12px 0;
-  padding: 20px 0;
-  display: flex;
-  justify-content: center;
-}
-
-.selectionDiv p {
+  margin: 50px 0;
   color: #00be8a;
+  font-size: 20px;
   font-weight: 500;
-  font-size: 18px;
+  padding: 20px 0;
+  width: 100%;
 }
 
 .divSection {
