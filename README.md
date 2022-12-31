@@ -13,6 +13,7 @@ Foi desenvolvida uma aplicação com Vue onde é possível acessar informações
 - ESlint
 - Components
 - Props
+- States
 
 ## Observações:
 
