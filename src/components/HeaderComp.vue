@@ -1,8 +1,4 @@
-<script>
-// export default {
-//   props: { onClickBtn: Function },
-// };
-</script>
+<script></script>
 <template>
   <header class="divHeader" />
 </template>

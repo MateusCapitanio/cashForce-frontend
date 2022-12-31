@@ -11,8 +11,8 @@ export default {
     return {
       items_array: [
         1234,
-        responseBuyers.name,
-        responseProviders.name,
+        responseBuyers.name || "requestFailed",
+        responseProviders.name || "requestFailed",
         "12/02/2020",
         "R$ 49.725,00",
         "RECEBIDO",
@@ -38,9 +38,11 @@ export default {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td v-for="items in items_array" :key="items[0]">{{ items }}</td>
-          <td><Button /></td>
+        <tr v-for="items in 3" :key="items">
+          <td v-for="(items, index) in items_array" :key="index">
+            {{ items }}
+          </td>
+          <td><Button text="Dados do cedente" /></td>
         </tr>
       </tbody>
     </table>

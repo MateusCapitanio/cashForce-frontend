@@ -1,11 +1,11 @@
 <script>
 export default {
-  props: { onClickBtn: Function },
+  props: { text: String },
 };
 </script>
 <template>
   <div class="divButton">
-    <button>Dados do cedente</button>
+    <button>{{ text }}</button>
   </div>
 </template>
 
