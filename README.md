@@ -1,35 +1,19 @@
-# cashForce-frontend
+# Bem-vindo ao Cashforce Front-end.
 
-This template should help get you started developing with Vue 3 in Vite.
+Esta aplicação tem como objetivo consumir os dados disponibilizados pela API Cashforce Back-end e exibi-los em tela.
 
-## Recommended IDE Setup
+## O que foi desenvolvido:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Foi desenvolvida uma aplicação com Vue onde é possível acessar informações de notas fiscais de transações.
 
-## Customize configuration
+## Tecnologias utilizadas:
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Vue.js
+- Axios
+- ESlint
+- Components
+- Props
 
-## Project Setup
+## Observações:
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+A estilização da aplicação foi feita à partir do `CSS` puro.
