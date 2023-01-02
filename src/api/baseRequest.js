@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:3500/";
+const BASE_URL = "http://localhost:8956/";
 
 const getRequest = async (urlParam) => {
   try {
@@ -8,6 +8,7 @@ const getRequest = async (urlParam) => {
     return response.data;
   } catch (err) {
     console.log(err);
+    return { name: "requestFailed" };
   }
 };
 

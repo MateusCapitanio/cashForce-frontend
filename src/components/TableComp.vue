@@ -6,16 +6,28 @@ import getRequest from "../api/baseRequest";
 const responseBuyers = await getRequest("buyers");
 const responseProviders = await getRequest("providers");
 
+const status = [
+  "Pendente de confirmação",
+  "Pedido confirmado",
+  "Não reconhece o pedido",
+  "Mercadoria não recebida",
+  "Recebida com avaria",
+  "Devolvida",
+  "Recebida com devolução parcial",
+  "Recebida e confirmada",
+  "Pagamento Autorizado",
+];
+
 export default {
   data() {
     return {
       items_array: [
         1234,
-        responseBuyers.name || "requestFailed",
-        responseProviders.name || "requestFailed",
+        responseBuyers.name,
+        responseProviders.name,
         "12/02/2020",
         "R$ 49.725,00",
-        "RECEBIDO",
+        status[7],
       ],
     };
   },
