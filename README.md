@@ -6,6 +6,9 @@ Esta aplicação tem como objetivo consumir os dados disponibilizados pela API C
 
 Foi desenvolvida uma aplicação com Vue onde é possível acessar informações de notas fiscais de transações.
 
+### Execução da aplicação:
+Para executar a aplicação basta clonar o repositório à partir do comando `git clone`, fazer a instalação das dependências utilizando `npm install`, então, a aplicação irá inicializar na sua máquina pela porta `5173`.
+
 ## Tecnologias utilizadas:
 
 - Vue.js
