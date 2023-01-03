@@ -6,7 +6,7 @@ Esta aplicação tem como objetivo consumir os dados disponibilizados pela API C
 
 Foi desenvolvida uma aplicação com Vue onde é possível acessar informações de notas fiscais de transações.
 
-### Execução da aplicação:
+## Execução da aplicação:
 Para executar a aplicação basta clonar o repositório à partir do comando `git clone`, fazer a instalação das dependências utilizando `npm install`, então, executar um `npm run dev` para a aplicação inicializar na sua máquina pela porta `5173`.
 
 ## Tecnologias utilizadas:
@@ -22,3 +22,4 @@ Para executar a aplicação basta clonar o repositório à partir do comando `gi
 
 - Para executar a requisição corretamente a API precisa estar ativa, caso contrário, será retornado `requestFailed` para a aplicação.
 - A estilização da aplicação foi feita à partir do `CSS` puro.
+- A rota da requisição da API é definida no `.env` como `VITE_BASE_URL`.
