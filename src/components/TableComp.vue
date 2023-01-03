@@ -27,7 +27,7 @@ export default {
         responseProviders.name,
         "12/02/2020",
         "R$ 49.725,00",
-        status[7],
+        responseBuyers.name === "requestFailed" ? "requestFailed" : status[7],
       ],
     };
   },
